@@ -12,14 +12,7 @@ class View
                 $this->{$key} = $value;
             }
         }
-        require APP . 'view/_templates/header.php';
-        require APP . 'view/' . $filename . '.php';
-        require APP . 'view/_templates/footer.php';
+        echo $this->view->render("/home/index");
     }
-    /*public function renderFeedbackMessages()
-    {
-        require APP . 'view/_templates/feedback.php';
-        Session::set('feedback_negative', null);
-        Session::set('feedback_positive', null);
-    }*/
+
 }

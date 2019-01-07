@@ -18,6 +18,8 @@
 
 
 <?php $this->insert('partials/menu')?>
+
+
 <?= $this->section('content') ?>
 
 <div class="footer">

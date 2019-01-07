@@ -46,7 +46,7 @@ class ProductController extends Controller
                         $errores['nombre'] = $value;
                     }
                     if($check = $repeat->checkRepeat('Productos','nombre', $_POST['nombre'])){
-                        $errores['nombre'] = 'Este producto ya existe';
+                        $errores['nombre'] = 'Esa categoria ya existe';
                     }
                 }
 
